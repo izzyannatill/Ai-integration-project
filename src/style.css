@@ -1,5 +1,15 @@
+.main {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: #757F9A;
+    background: linear-gradient(to right, #757F9A, #D7DDE8);;
+}
+
 footer {
 text-align: center;
 font-family: monospace;
 font-size: small;
+padding: 10px;
 }
+
