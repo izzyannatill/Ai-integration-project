@@ -10,6 +10,33 @@ function generateFuture(event) {
         deleteSpeed: Infinity,
     });
 
+     new Typewriter ("#money", {
+        strings: ["Money horoscope"],
+        autoStart: true,
+        delay: 2,
+        cursor: "",
+        loop: false,
+        deleteSpeed: Infinity,
+    });
+
+     new Typewriter ("#health", {
+        strings: ["Health horoscope"],
+        autoStart: true,
+        delay: 2,
+        cursor: "",
+        loop: false,
+        deleteSpeed: Infinity,
+    });
+
+     new Typewriter ("#destiny", {
+        strings: ["Destiny horoscope"],
+        autoStart: true,
+        delay: 2,
+        cursor: "",
+        loop: false,
+        deleteSpeed: Infinity,
+    });
+
 }
 
 
