@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Ai Project</title>
   </head>
   <body>
@@ -19,19 +21,19 @@
     </p>
 </header>
 <main>
-    <form>
+    <form id="form">
     <input type="text" placeholder="🌞🌚 Enter Your Birthdate To Find Your Future! 🌚🌞" id="future-form" autofocus required>
     <div><input type="submit" value="Reveal My Fate!" id="fate"/></div>
     </form>
     <div id="horoscope">
     <h3>🖤 Love 🖤</h3>
-<p class="fortune">A spark ignites in your heart today, drawing you closer to someone special. Embrace the magic of connection and let your feelings flow.</p>
+<p class="fortune" id="love">Open your heart; love is just around the corner!</p>
 <h3>💰 Money 💰</h3>
-<p class="fortune">Opportunities for financial growth are on the horizon. Trust your instincts and take calculated risks to manifest abundance.</p>
+<p class="fortune" id="money">Fortune favors the bold—seize your opportunity!</p>
 <h3>🍎 Health 🍎</h3>
-<p class="fortune">Nurture your spirit with self-care rituals. A moment of tranquility will rejuvenate your energy and enhance your well-being.</p>
+<p class="fortune" id="health">Rejuvenation is on the horizon!</p>
 <h3>✨ Destiny ✨</h3>
-<p class="fortune">The universe whispers secrets of your path. Stay open to unexpected twists, for they may lead you to your true purpose.</p>
+<p class="fortune" id="destiny">Your path is unfolding; trust the signs ahead!</p>
 </div>
 </main>
 </div>
