@@ -6,6 +6,8 @@ function generateFuture(event) {
         autoStart: true,
         delay: 2,
         cursor: "",
+        loop: false,
+        deleteSpeed: Infinity,
     });
 
 }
