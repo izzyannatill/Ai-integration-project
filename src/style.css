@@ -17,12 +17,24 @@ text-align: center;
 
 .main {
     text-align: center;
-    padding: 10px;
+    padding: 30px 10px;
     border-radius: 8px;
     background-color:rgba(206, 212, 224, 0.09);
     color: rgb(218, 218, 218);
     width: 70%;
     margin: 0 auto;
+    margin-top: 100px;
+}
+
+.main-edit {
+    text-align: center;
+    padding: 30px 10px; 
+    border-radius: 8px;
+    background-color: rgba(206, 212, 224, 0.09);
+    color: rgb(218, 218, 218);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .intro {
