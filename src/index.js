@@ -3,7 +3,7 @@ function getHoroscope(response) {
     new Typewriter ("#see-future", {
         strings: response.data.answer,
         autoStart: true,
-        delay: 1,
+        delay: 0.8,
         cursor: "",
         loop: false,
         deleteSpeed: Infinity,
@@ -17,7 +17,7 @@ let changeClass = document.querySelector(".main");
 let userInput = document.querySelector("#future-form");
 let apiKey = "35f5fdatd61eb8d900b80389439e49o7";
 let context = "You are a psychic and can read a person's fortune! You focus on positives and avoid anything morbid or scary. You use mystical and enchanting words, keeping your fortunes only a couple sentences long at most."
-let prompt = `Generate a mystical yet grounded horoscope based on the birthdate of ${userInput.value}. The horoscope should be divided into four <h2> elements (🖤 Love 🖤, 💰 Money 💰, 🍎 Health 🍎, and ✨ Destiny ✨) with <p> content of three sentences below each heading. Mention the user's star sign only once in the entire text, ensuring that each section is relevant to its heading. The tone should be similar to the following example: "Between now and August 28, you might rethink your wellness regimen or revisit a project that’s been languishing on the shelf. Be patient with crossed wires on the job and give coworkers the benefit of the doubt for now. With proactive Mars enjoying a rare meetup with enthused Jupiter in Gemini and your domestic quarters today, you might be excited to tackle a household project, but only proceed if there’s an airtight plan in place."`;
+let prompt = `Generate a mystical yet grounded horoscope based on the birthdate of ${userInput.value}. The horoscope should be divided into four <h2> elements (🖤 Love 🖤, 💰 Money 💰, 🍎 Health 🍎, and ✨ Destiny ✨) with <p> content of three sentences below each heading. Mention the user's star sign based on ${userInput.value}, ensuring that each section is relevant to its heading. The tone should be similar to the following example: "Between now and August 28, you might rethink your wellness regimen or revisit a project that’s been languishing on the shelf. Be patient with crossed wires on the job and give coworkers the benefit of the doubt for now. With proactive Mars enjoying a rare meetup with enthused Jupiter in Gemini and your domestic quarters today, you might be excited to tackle a household project, but only proceed if there’s an airtight plan in place."`;
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 axios.get(apiUrl).then(getHoroscope);
 }
